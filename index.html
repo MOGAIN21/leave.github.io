@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="BITS Pilani Logo width="401" height="104">
+        </div>
+        <div class="header-text">
+            
+            <h1>Student Welfare Division (SWD)</h1>
+            
+            
+            
+           
+        </div>
+    </div>
+    
+  
+    
+
+    <nav>
+        <ul>
+            <li><a href="#">            </a></li>
+            <li><a href="#">Apply For Leaves</a></li>
+            <li><a href="#">Download Parent's Consent Form</a></li>
+            <li><a href="#">Leaves Status</a></li>
+        </ul>
+    </nav>
+  
+
+
+    <div class="form-section">
+        
+        <form id="leaveForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="id">ID Number:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="hostel">Hostel:</label>
+            <input type="text" id="hostel" name="hostel" required><br>
+
+            <label for="roomNo">Room Number:</label>
+            <input type="text" id="roomNo" name="roomNo" required><br>
+
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" name="departureDate" required><br>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required><br>
+
+            <label for="reason">Leave Reason:</label>
+            <input type="text" id="reason" name="reason" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   
+
+    <div id="statusSection" class="status-section" style="display:none;">
+        <div class="welcome-section">
+            <span id="welcomeMessage"></span>
+            <span id="currentDate"></span>
+            <a href="#" id="logoutLink">Logout</a>
+        </div>
+        
+        <h2>Leaves Status</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>IDNO</th>
+                    <th>Name</th>
+                    <th>Hostel</th>
+                    <th>Room No.</th>
+                    <th>Departure Date</th>
+                    <th>Return Date</th>
+                    <th>Leave Reason</th>
+                    <th>Application Status</th>
+                    <th>Leaves Applied On</th>
+                    <th>Action</th>
+                    <th>Download Leave Approval</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td id="displayId"></td>
+                    <td id="displayName"></td>
+                    <td id="displayHostel"></td>
+                    <td id="displayRoomNo"></td>
+                    <td id="displayDeparture"></td>
+                    <td id="displayReturn"></td>
+                    <td id="displayReason"></td>
+                    <td class="approved">Approved</td>
+                    <td id="displayAppliedDate"></td>
+                    <td><a href="#">View Details</a></td>
+                    <td><a href="#">Download Leave Approval</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

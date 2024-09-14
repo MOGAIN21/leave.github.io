@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    font-size: 0.5vw; /* Font size scales with viewport width */
+}
+
+.header {
+    display: flex;
+    align-items: left;
+    padding: 2vh; /* Scales with viewport height */
+    background-color: #ffffff;
+    border-bottom: 0.2vw solid #ccc;
+}
+
+.logo img {
+    width: 40vw; /* Set image width to scale with viewport */
+    height: auto;
+    margin-left: 0vw; /* Proportional margin */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    padding: 0.0.004vw 0;
+    border-bottom: 0.0003vw solid #ccc;
+    margin-bottom: 0.04vw;
+}
+
+nav ul li {
+    margin: 1vh 3vw 1vh 2vw; /* Scales with viewport height and width */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #211D70;
+    font-weight: bold;
+    font-size: 1.2vw; /* Scale font size with viewport width */
+}
+
+h1 {
+    color: #211D70;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    font-size: 2.5vw; /* Scale heading size */
+}
+
+.form-section h2 {
+    color: #211D70;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 0.5vh;
+    color: #333;
+    font-size: 1.2vw;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 1.5vh;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    font-size: 1.2vw;
+}
+
+.form-section button {
+    padding: 1vh 1.5vw;
+    background-color: #211D70;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+}
+
+.status-section {
+    width: 95%;
+    margin: 2vh auto;
+}
+
+.status-section h2 {
+    color: #211D70;
+    text-align: center;
+    padding-bottom: 2vh;
+    font-size: 2vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1.2vw;
+    border: 0.1vw solid #ccc;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 0.5vw;
+    border: 0.1vw solid #666666;
+}
+
+.approved {
+    color: green;
+    font-weight: bold;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    font-size: 1.2vw;
+}
+
+#welcomeMessage {
+    font-weight: bold;
+    color: #211D70;
+}
+
+#currentDate {
+    
+    font-weight: bold;
+    color: #211D70;
+    margin-left: 59vw;
+}
+
+#logoutLink {
+    text-decoration: none;
+    color: #006699;
+    font-weight: bold;
+    margin-left: auto;
+}
