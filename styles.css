@@ -23,6 +23,14 @@ body {
     height: auto;
     margin-left: 0vw; /* Proportional margin */
 }
+.color img {
+    width: 40vw; /* Set image width to scale with viewport */
+    height: auto;
+    margin-left: 20vw;
+    
+    
+
+}
 
 nav ul {
     list-style-type: none;
