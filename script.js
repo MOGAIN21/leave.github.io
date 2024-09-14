@@ -23,12 +23,12 @@ document.getElementById("leaveForm").addEventListener("submit", function(event) 
    document.getElementById("welcomeMessage").textContent = `WELCOME, ${name}`;
    var today = new Date();
    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-   var formattedDate = today.toISOString().split('T')[0];
+   var formattedDate = today.toLocaleDateString('en-US', options);
    document.getElementById("currentDate").textContent = ` ${formattedDate} |`;
 
     // Get current date for application date
     var today = new Date();
-    var appliedDate = today.toLocaleDateString('en-US', options);
+    var appliedDate = today.toISOString().split('T)[0];
     document.getElementById("displayAppliedDate").textContent = appliedDate;
 
     
