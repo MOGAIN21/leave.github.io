@@ -28,7 +28,7 @@ document.getElementById("leaveForm").addEventListener("submit", function(event) 
 
     // Get current date for application date
     var today = new Date();
-    var appliedDate = today.toISOString().split('T')[0];
+    var appliedDate = today.toLocaleDateString('en-US', options);
     document.getElementById("displayAppliedDate").textContent = appliedDate;
 
     
