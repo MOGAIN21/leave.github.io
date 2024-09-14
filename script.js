@@ -23,7 +23,7 @@ document.getElementById("leaveForm").addEventListener("submit", function(event) 
    document.getElementById("welcomeMessage").textContent = `WELCOME, ${name}`;
    var today = new Date();
    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-   var formattedDate = today.toLocaleDateString('en-US', options);
+   var formattedDate = today.toISOString().split('T')[0];
    document.getElementById("currentDate").textContent = ` ${formattedDate} |`;
 
     // Get current date for application date
