@@ -9,24 +9,17 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="logo.png" alt="BITS Pilani Logo width="401" height="104">
+            <img src="logo.png" alt="BITS Pilani Logo" width="401" height="104">
         </div>
+       
         <div class="header-text">
-            
             <h1>Student Welfare Division (SWD)</h1>
-             <div class="color">
-            <img src="color.png" alt="BITS Pilani Logo width="401" height="104">
-        </div>
-            
-            
-            
-           
+            <div class="color">
+                <img src="color.png" alt="BITS Pilani Logo" width="401" height="104">
+            </div>
         </div>
     </div>
     
-  
-    
-
     <nav>
         <ul>
             <li><a href="#">            </a></li>
@@ -35,11 +28,8 @@
             <li><a href="#">Leaves Status</a></li>
         </ul>
     </nav>
-  
-
 
     <div class="form-section">
-        
         <form id="leaveForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
@@ -47,8 +37,25 @@
             <label for="id">ID Number:</label>
             <input type="text" id="id" name="id" required><br>
 
+            <!-- Updated Hostel Dropdown Menu -->
             <label for="hostel">Hostel:</label>
-            <input type="text" id="hostel" name="hostel" required><br>
+            <select id="hostel" name="hostel" required>
+                <option value="" disabled selected>Select your hostel</option>
+                <option value="Shankar Bhawan">Shankar Bhawan</option>
+                <option value="Gandhi Bhawan">Gandhi Bhawan</option>
+                <option value="Meera Bhawan">Meera Bhawan</option>
+                <option value="Ashok Bhawan">Ashok Bhawan</option>
+                <option value="Krishna Bhawan">Krishna Bhawan</option>
+                <option value="Ram Bhawan">Ram Bhawan</option>
+                <option value="Budh Bhawan">Budh Bhawan</option>
+                <option value="Vyas Bhawan">Vyas Bhawan</option>
+                <option value="Srinivas Ramanujan Bhawan">Srinivas Ramanujan Bhawan</option>
+                <option value="Vishnu Karma Bhawan">Vishnu Karma Bhawan</option>
+                <option value="Bhagirath Bhawan">Bhagirath Bhawan</option>
+                <option value="Rana Pratap Bhawan">Rana Pratap Bhawan</option>
+                
+                <!-- Add more hostels if needed -->
+            </select><br>
 
             <label for="roomNo">Room Number:</label>
             <input type="text" id="roomNo" name="roomNo" required><br>
@@ -65,13 +72,14 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-   
 
     <div id="statusSection" class="status-section" style="display:none;">
         <div class="welcome-section">
             <span id="welcomeMessage"></span>
+            <div class="d">
             <span id="currentDate"></span>
             <a href="#" id="logoutLink">Logout</a>
+            </div>
         </div>
         
         <h2>Leaves Status</h2>
