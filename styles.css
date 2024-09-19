@@ -39,7 +39,7 @@ nav ul {
     background-color: #f4f4f4;
     padding: 0.0.004vw 0;
     border-bottom: 0.0003vw solid #ccc;
-    margin-bottom: 0.04vw;
+    margin-top: vh;
 }
 
 nav ul li {
@@ -129,7 +129,7 @@ th, td {
 .welcome-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     margin-bottom: 2vh;
     font-size: 1.2vw;
 }
@@ -137,18 +137,23 @@ th, td {
 #welcomeMessage {
     font-weight: bold;
     color: #211D70;
+    width: 100%;
 }
 
 #currentDate {
     
     font-weight: bold;
     color: #211D70;
-    margin-left: 59vw;
+    align-items: left;
+}
+.d{
+    display: flex;
+    width: 100%;
+    justify-content: end;
 }
 
 #logoutLink {
     text-decoration: none;
     color: #006699;
     font-weight: bold;
-    margin-left: auto;
 }
